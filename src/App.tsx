@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { routers } from "./routes";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Learn Use Hooks</h1>
+        <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+          {routers.map((e) => (
+            <a className="App-link" href={e.path} rel="noopener noreferrer">
+              {e.id}
+            </a>
+          ))}
+        </div>
       </header>
     </div>
   );
 }
-
-export default App;
