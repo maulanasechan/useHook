@@ -4,7 +4,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { routers } from "./routes";
 
-console.log(routers);
 const router = createBrowserRouter(routers);
 
 const root = ReactDOM.createRoot(

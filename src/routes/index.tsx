@@ -4,7 +4,8 @@ import Login from "../page/login";
 import ExampleWithUseReducer from "../page/useReducer";
 import ExampleWithUseEffect from "../page/useEffect";
 import ExampleWithUseRef from "../page/useRef";
-import ExampleWithUseForm from "../page/useRef";
+import ExampleWithUseForm from "../page/useForm";
+import ExampleWithUseLayout from "../page/useLayout";
 
 export const routers = [
   {
@@ -34,6 +35,11 @@ export const routers = [
     path: "/exampleWithUseRef",
     id: "Learn Use Ref",
     element: <ExampleWithUseRef />,
+  },
+  {
+    path: "/exampleWithUseLayout",
+    id: "Learn Use Layout",
+    element: <ExampleWithUseLayout />,
   },
   {
     path: "/exampleWithUseForm",
