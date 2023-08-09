@@ -6,6 +6,7 @@ import ExampleWithUseEffect from "../page/useEffect";
 import ExampleWithUseRef from "../page/useRef";
 import ExampleWithUseForm from "../page/useForm";
 import ExampleWithUseLayout from "../page/useLayout";
+import ExampleWithUseImperative from "../page/useImperative";
 
 export const routers = [
   {
@@ -40,6 +41,11 @@ export const routers = [
     path: "/exampleWithUseLayout",
     id: "Learn Use Layout",
     element: <ExampleWithUseLayout />,
+  },
+  {
+    path: "/exampleWithUseImperative",
+    id: "Learn Use Imperative",
+    element: <ExampleWithUseImperative />,
   },
   {
     path: "/exampleWithUseForm",
