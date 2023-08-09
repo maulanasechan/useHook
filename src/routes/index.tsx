@@ -9,6 +9,7 @@ import ExampleWithUseLayout from "../page/useLayout";
 import ExampleWithUseImperative from "../page/useImperative";
 import ExampleWithUseContext from "../page/useContext";
 import ExampleWithUseMemo from "../page/useMemo";
+import ExampleWithUseCallback from "../page/useCallback";
 
 export const routers = [
   {
@@ -58,6 +59,11 @@ export const routers = [
     path: "/exampleWithUseMemo",
     id: "Learn Use Memo",
     element: <ExampleWithUseMemo />,
+  },
+  {
+    path: "/exampleWithUseCallback",
+    id: "Learn Use Callback",
+    element: <ExampleWithUseCallback />,
   },
   {
     path: "/exampleWithUseForm",
